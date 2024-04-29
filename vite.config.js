@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
     return {
         define: {
             "process.env.SUPABASE_KEY": JSON.stringify(env.SUPABASE_KEY),
+            "process.env.SUPABASE_URL": JSON.stringify(env.SUPABASE_URL),
         },
         plugins: [react(), eslint()],
     };
